@@ -1,0 +1,22 @@
+server:
+  port: 9000
+feign: 
+  hystrix: 
+    enabled: false
+spring:
+   application:
+    name: booko2ocloud-consumer-feign 
+eureka:
+  client:
+   
+    service-url: 
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+    instance:
+      instance-id: booko2ocloud-consumer-feign 
+      prefer-ip-address: true     #访问路径可以显示IP地址    
+info: 
+  app.name: book2o2
+  company.name: www.snbc.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+ 
